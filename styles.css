@@ -1,12 +1,113 @@
-#boardArea{
+
+body {
+    font-family: 'Orbitron', sans-serif;
+background: url(grey2.jpg);
+background-size:cover; 
+background-position: center center;
+background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#boardArea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 400px;
     width: 400px;
+    background-color: #303030;
+    border: 5px solid #c7c7c7;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
    
+  }
+  #squares{
+    font-size: 80px;
+  }
+  
+ .main{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    
+ }
+ .head{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+ }
+ .player1{
+    
+    justify-content: flex-end;
+    align-items: flex-start;
+   right: 30px;
+    
+ }
+ .player2{
+   
+    justify-content:flex-start;
+    align-items: flex-start;
+    
+    left: 30px
+ }
+
+ .player1 ,.player2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+    top: 150px;
+ }
+ .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+ }
+ .youWin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 24px;
+    height: 24px;
+    padding-bottom: 10px;
+ }
+
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-grow: 1;
+}
+.playerOneName, .playerTwoName {
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.playerOneScore, .playerTwoScore{
+    padding-top: 10px;
 }
 
-#squares{
-    border: 2px solid black;
+.popForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    height: 600px;
+}
+#resetButton{
+    font-size: 40px;
+    width: 200px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.material-symbols-outlined{
+    font-size: 60px;
 }

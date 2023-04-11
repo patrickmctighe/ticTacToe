@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-<div id="boardArea"></div>
-<button class="clear">clear</button>
+  </head>
+  <body>
+    <div class="pop-up">
+      <form action="submit" class="popForm">
+        <h1 class="formName">Name Your Players</h1>
+        <div class="formPart">
+          <label for="player1Name" class="player1Name">Player One Name: </label
+          ><input type="text" name="player1Name" id="player1Name" />
+        </div>
+        <div class="formPart"></div>
+        <div class="formPart">
+          <label for="player2Name" class="player2Name">Player Two Name: </label
+          ><input type="text" name="player2Name" id="player2Name"/>
+        </div>
+        <button class="btn" type="submit">Start Game</button>
+      </form>
+    </div>
+    <div class="game-container" id="gameContainer" style="display: none">
+      <div class="head">
+        <div class="player1">
+          <div class="playerOneName">Player 1</div>
+          <div class="playerOneScore">Score:</div>
+          <div class="playerOneShape">Shape: X</div>
+        </div>
+        <h1 class="title">Tic - Tac - Toe</h1>
 
-  <script src="tictactoe.js"></script>  
-</body>
+        <div class="player2">
+          <div class="playerTwoName">Player 2</div>
+          <div class="playerTwoScore">Score:</div>
+          <div class="playerTwoShape">Shape: O</div>
+        </div>
+      </div>
+      <div class="youWin"></div>
+      <div class="main">
+        <div id="boardArea"></div>
+        <button id="resetButton"><span class="material-symbols-outlined">
+            remove
+            </span></button>
+      </div>
+    </div>
+    <script src="tictactoe.js"></script>
+  </body>
 </html>
